@@ -23,6 +23,18 @@ p {
 	max-width: 500px;
 }
 
+p:first-letter {
+	font-size: 150%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 h2 {
 	margin-bottom: 10px;
 }
@@ -44,13 +56,18 @@ img {
 	justify-content: center;
 	margin-right: 20px;
 }
+
+ol {
+	display: flex;
+	flex-direction: column-reverse;
+}
 </style>
 
 <body>
 	<h1>Khurshid Ernazarov</h1>
 	<p> I am a third-year student majoring in CS. I like reading, gaming, programming, and travelling. And I am <b>stressed</b>.</p>
 	<h2>Classes I am taking this semester</h2>
-	<p><i>(Additionally, I am working as a Student Assistant.)</i></p>
+	<p><i>Additionally, I am working as a Student Assistant.</i></p>
 	<ul>
 		<li>CIP project</li>
 		<li>Discrete Math</li>
@@ -60,7 +77,13 @@ img {
 
 	<h2>Favourite Book, Movie and TV show</h2>
 	<ol>
-		<li>Series of books about Erast Fandorin by Boris Akunin (<a href="https://en.wikipedia.org/wiki/Erast_Fandorin">Wiki</a>)</li>
+		<li>Series of books about Erast Fandorin by Boris Akunin (<a href="https://en.wikipedia.org/wiki/Erast_Fandorin">Wiki</a>)
+			<ul>
+				<li><b>Author</b>: <i>Boris Akunin</i></li>
+				<li><b>Description</b>: <i>Erast Petrovich Fandorin is a fictional 19th-century Russian detective and the hero of a series of Russian historical detective novels.</i></li>
+				<li><b>Genre</b>: <i>Detective, Crime Novel</i></li> 
+			</ul>
+		</li>
 		<li>Interstellar (2014) by Christofer Nolan (<a href="https://www.imdb.com/title/tt0816692/">IMDb</a>)</li>
 		<li>Chernobyl (2019) by HBO (<a href="https://www.imdb.com/title/tt7366338/">IMDb</a>)</li>
 	</ol>
